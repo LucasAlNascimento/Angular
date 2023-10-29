@@ -20,9 +20,11 @@
             font-size: rem-calc(18);
 
             color: var(--branco);
+            
 
             &::placeholder{
                 color: var(--branco);
+                opacity: 30%;
             }
         }
     }
