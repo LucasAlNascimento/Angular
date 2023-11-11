@@ -8,7 +8,7 @@
         align-items: center;
 
         padding: rem-calc(15) rem-calc(20);
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: var(--search-color);
 
         border-radius: rem-calc(10);
 
@@ -19,11 +19,11 @@
 
             font-size: rem-calc(18);
 
-            color: var(--branco);
+            color: var(--primary-color);
             
 
             &::placeholder{
-                color: var(--branco);
+                color: var(--primary-color);
                 opacity: 30%;
             }
         }

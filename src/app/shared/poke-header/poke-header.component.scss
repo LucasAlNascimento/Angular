@@ -8,13 +8,11 @@
         
         padding: rem-calc(40) 0;
 
-        .pokedex_logo{
-            position: absolute;
-        }
-
-        .moon__button{
+        .theme__button{
             position: relative;
             left: rem-calc(40);
+            cursor: pointer;
+            background: none;
         }
 
         

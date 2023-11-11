@@ -1,13 +1,47 @@
 :root{
-    --branco: #fff;
-    --cinza: #efefef;
+
+    //HTML Body Color
+    --body: var(--primary-color);
+
+    //General Colors
     --primary-color: #262835;
     --secondary-color: #ff5473;
+    --tertiary-color: #efefef; 
+    --quaternary-color: #fff;
+
+    //Search Component
+    --search-color: rgba(255, 255, 255, 0.2);
+
+    //Details Component
+    --japanese-name-color: var(--search-color);
+    --stats-title-color: var(--secondary-color);
+    --stats-color: var(--primary-color);
+    --return-button-color: var(--secondary-color);
     
 }
 
 :root .light-theme{
-    --light-pink: #FF718B; 
+
+    //HTML Body Color
+    --body: var(--primary-color);
+
+    //General Colors
     --primary-color: #fff;
     --secondary-color: #ff5473;
+    --tertiary-color: #FF718B; 
+    --quaternary-color: #ff5473;
+
+    //Search Component
+    --search-color: rgba(255, 84, 115, 0.59);
+
+    //Details Component
+    --japanese-name-color: var(--search-color);
+    --stats-title-color: var(--primary-color);
+    --stats-color: var(--primary-color);
+    --return-button-color: var(--primary-color);
+
+}
+
+body{
+    background: var(--body);
 }
