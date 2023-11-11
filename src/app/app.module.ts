@@ -1,14 +1,16 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http'
-
-import { AppRoutingModule } from './app-routing.module';
+//Components
 import { AppComponent } from './app.component';
 
 //Modules
 import { PagesModule } from './pages/pages.module';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
+import { AppRoutingModule } from './app-routing.module';
 
-//Components
+//Services
+import { ThemeService } from './service/theme.service';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { PagesModule } from './pages/pages.module';
     PagesModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ThemeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
