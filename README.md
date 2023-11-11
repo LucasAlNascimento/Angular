@@ -2,9 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
 
-## GitHub Pages Build
+## GitHub Pages Deploy
 
-This project site is currently being built from the /docs folder in the main branch. Check out the project `https://lucasalnascimento.github.io/pokedex/`.
+This project site is currently being built from the /docs folder in the main branch. Check out the project deploy `https://lucasalnascimento.github.io/pokedex/`.
 
 ## Development server
 
