@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ETheme } from 'src/app/enums/ETheme.enum';
 
 @Component({
   selector: 'poke-header',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./poke-header.component.scss']
 })
 export class PokeHeaderComponent implements OnInit {
-  public icon: string = "moon.svg";
+  public icon: string = ETheme.ICON_MOON;
   public logo: string = "logo.svg";
 
 
@@ -14,18 +15,17 @@ export class PokeHeaderComponent implements OnInit {
 
   ngOnInit(): void {
     
-  }
- 
+  } 
   
   public toggle(){
-    const theme: boolean = document.body.classList.toggle("light-theme");
+    const theme = document.body.classList.toggle("light-theme");
 
     if(theme){
-      this.logo = "logo-light.svg";
-      return (this.icon = "sun.svg");
+      this.logo = ETheme.LOGO_LIGHT;
+      return (this.icon = ETheme.ICON_SUN);
     }
-      this.logo = "logo.svg";
-      return (this.icon = "moon.svg");
+      this.logo = ETheme.LOGO;
+      return (this.icon = ETheme.ICON_MOON);
     }
   }
 
