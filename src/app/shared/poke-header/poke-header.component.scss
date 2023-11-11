@@ -5,7 +5,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        
         padding: rem-calc(40) 0;
+
+        .pokedex_logo{
+            position: absolute;
+        }
+
+        .moon__button{
+            position: relative;
+            left: rem-calc(40);
+        }
+
+        
     }
 }
