@@ -7,9 +7,9 @@ import { ETheme } from 'src/app/enums/ETheme.enum';
   styleUrls: ['./poke-header.component.scss']
 })
 export class PokeHeaderComponent implements OnInit {
-  public icon: string = ETheme.ICON_MOON;
-  public logo: string = "logo.svg";
 
+  public icon: string = ETheme.ICON_MOON;
+  public logo: string = ETheme.LOGO;
 
   constructor(){}
 
